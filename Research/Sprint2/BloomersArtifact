@@ -1,0 +1,31 @@
+As a developer, I need to identify which storage platform to use so we have a place to host solution data.
+
+  Search the web for different storage platforms.
+  AWS
+    Pros:
+    With a single PUT operation, you can upload a single object up to 5 GB in size.
+    Relatively unlimited amount of storage
+    Cons:
+    Could be potential cost in the future
+  GITLAB
+    Pros:
+    Majorly focused on DevOps
+    Cons:
+    The storage limit is 10GB
+    The gitlab.com site has a configured limit of 10MBs for file/attachment uploads.
+  GITHUB
+    Pros:
+    GitHub doesn't have any set disk quotas. So each user has access to an abundant amount of storage.
+    Cons:
+    Strict limit of files exceeding 100 MB in size
+  Icedrive
+    Pros:
+    Only cloud storage solution to support Twofish Encryption. Everything is encrypted at the client-side with zero knowledge of your data
+    It allows you to store files up to 100 TB.
+    No time-consuming Sync Needed as you can Mount IceDrive with a simple click.
+    Cons:
+    Only given 10GB of storage
+
+Communicate with Boeing to find out which storage platform they would prefer to use.
+
+
