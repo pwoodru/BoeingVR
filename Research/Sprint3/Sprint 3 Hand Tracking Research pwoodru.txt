@@ -1,0 +1,4 @@
+Official Oculus Developer Article on Hand Tracking, its uses, and implementation:
+	https://developer.oculus.com/documentation/unity/unity-handtracking/
+
+
