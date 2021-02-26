@@ -1,0 +1,17 @@
+"How to VR for Dummies" Part 2
+
+As a developer, I can add on to the "VR for dummies" on the measurements inside of Unity:
+  > Research the interchangeability of coordinates inside Unity 
+    * Probuilder features
+      - I can duplicate objects and place them in different locations to interchange the coordinates of the objects.
+      - I can mirror an entire scene to replicate the stations to other tooling stations.
+      - I can insert edge loops onto objects to distort them more easily.
+    * ProGrids
+      - I can snap multiple vertices of an object together to modify the objects to make the coordinates interchangeable.
+      - It is especially handy for modular or tile-based environments, but it also significantly speeds up workflow and increases quality for all types of work.
+      - The world grid never changes position or orientation. This means you always know exactly where items are, how far they are from each other, and how far you are moving them.
+        Map the units in Unity to real life scenarios
+
+    * Take into account that unity works on a metric system rather than the imperial system
+
+    * Convert feet into meters when doing metric conversions
