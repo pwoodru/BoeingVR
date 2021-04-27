@@ -1,5 +1,9 @@
 This directory exists to host information to access our Virtual Reality application and it's functional setup.
 
+
+
+Set up the Unity ID with Unity Collaborate online at the following link, download and install the correct Unity version, and download and install Unity Hub to link your Unity ID to so you can access our "Boeing VR Collaborative Project".
+
 Here is the Collaborative Organization link hosted within Unity ID: https://id.unity.com/en/organizations/clemson-capstone
 
 Here is where you can download Unity 2019.4.20f1: https://unity3d.com/get-unity/download/archive
