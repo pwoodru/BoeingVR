@@ -4,6 +4,12 @@ Here is the Collaborative Organization link hosted within Unity ID: https://id.u
 
 Here is where you can download Unity 2019.4.20f1: https://unity3d.com/get-unity/download/archive
 
+- Unity System Dependencies:
+   
+    OS: Windows 7 SP1+, 8, 10, 64-bit versions only; Mac OS X 10.12+; Ubuntu 16.04, 18.04, and CentOS 7.
+
+    GPU: Graphics card with DX10 (shader model 4.0) capabilities.
+
 Here is the Unity Hub download: https://unity3d.com/get-unity/download
 
 From setup, you can link the Unity Hub to the organization within Unity ID, open "Boeing VR Collaborative Project", and the project will be downloaded to your desktop for you to manipulate.
