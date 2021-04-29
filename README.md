@@ -7,6 +7,30 @@ Technical Documentation
 ### ChangeScene.cs
 
 This script is used on the scene changing buttons of the Main Menu’s tablet to load the user into their selected scene. If the user hits the “Main Menu” button, the function “ChangeToMenu()” is called to send them to the main menu. If the user hits the “SandboxTutorial” button, the function “ChangeToSandbox()” is called to send them to the sandbox scene. Lastly, if the user hits the “Tooling Practice” button, the function “ChangeToTooling()” is called to send the user to the ToolingEnvo scene.
+
+ChangeScene.cs:
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+
+    public class ChangeScene : MonoBehaviour
+    {
+        //Provided the string for the scene name:
+        //Change to sandbox
+        public void ChangeToSandbox() {
+            SceneManager.LoadScene("SandboxTutorial");
+        }
+        //Change to tooling station
+        public void ChangeToTooling() {
+            SceneManager.LoadScene("ToolingEnvo");
+        }
+        //Change to main menu
+        public void ChangeToMenu() {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
  
 ## Sandbox Tutorial Scripts:
 
@@ -16,6 +40,106 @@ TaskCycle.cs is the script that handles the task rotation accessed by the “Tas
 To start, the script initializes the task number to “1”, activates task number 1, and deactivates the rest of the tasks.
  
 Upon the user hitting either the “back” button or the “next” button, the script will then decrement the task number by 1 for hitting back, or increment the task number by 1 for hitting next. If the value of task number goes below 1, task number will be manually set to 6, the last task page, for cycling purposes. The same goes for the task number going above 6, the task number will be set to 1, the first task page, for cycling purposes. Each time the user hits back or next, the script will first deactivate the currently shown task window and then activate the new task window along with any buttons necessary for its functionality.
+
+TaskCycle.cs:
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public class TaskCycle : MonoBehaviour
+    {
+    public GameObject t1;
+    public GameObject t2;
+    public GameObject t3;
+    public GameObject t4;
+    public GameObject t5;
+    public GameObject t6;
+    public GameObject completeButton;
+    public GameObject sandboxButton;
+    public int taskNum;
+
+    void Start() {
+        taskNum = 1;
+        t1.SetActive(true);
+        t2.SetActive(false);
+        t3.SetActive(false);
+        t4.SetActive(false);
+        t5.SetActive(false);
+        t6.SetActive(false);
+        completeButton.SetActive(true);
+        sandboxButton.SetActive(false);
+    }
+
+    public void NextTask() {
+        taskNum++;
+        if (taskNum > 6) {
+            taskNum = 1;
+        }
+        if (taskNum == 1) {
+            t6.SetActive(false);
+            sandboxButton.SetActive(false);
+            t1.SetActive(true);
+        }
+        if (taskNum == 2) {
+            t1.SetActive(false);
+            t2.SetActive(true);
+        }
+        if (taskNum == 3) {
+            t2.SetActive(false);
+            t3.SetActive(true);
+        }
+        if (taskNum == 4) {
+            t3.SetActive(false);
+            t4.SetActive(true);
+        }
+        if (taskNum == 5) {
+            t4.SetActive(false);
+            sandboxButton.SetActive(false);
+            t5.SetActive(true);
+        }
+        if (taskNum == 6) {
+            t5.SetActive(false);
+            completeButton.SetActive(false);
+            t6.SetActive(true);
+        }
+    }
+
+    public void BackTask() {
+        taskNum--;
+        if (taskNum < 1) {
+            taskNum = 6;
+        }
+        if (taskNum == 1) {
+            t2.SetActive(false);
+            sandboxButton.SetActive(false);
+            t1.SetActive(true);
+        }
+        if (taskNum == 2) {
+            t3.SetActive(false);
+            t2.SetActive(true);
+        }
+        if (taskNum == 3) {
+            t4.SetActive(false);
+            t3.SetActive(true);
+        }
+        if (taskNum == 4) {
+            t5.SetActive(false);
+            t4.SetActive(true);
+        }
+        if (taskNum == 5) {
+            t6.SetActive(false);
+            sandboxButton.SetActive(false);
+            t5.SetActive(true);
+        }
+        if (taskNum == 6) {
+            t1.SetActive(false);
+            completeButton.SetActive(false);
+            t6.SetActive(true);
+        }
+    }
+    
+    }
 
 
 ### SnapCollider.cs
