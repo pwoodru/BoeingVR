@@ -5,7 +5,7 @@ Email: aherzog@g.clemson.edu
 This directory exists to host information to set up and access our Virtual Reality application from the cloud if desired.
 
 
-Set up the Unity ID with Unity Collaborate online at the following link, download and install the correct Unity version, and download and install Unity Hub to link your Unity ID to so you can access our "Boeing VR Collaborative Project".
+Set up the Unity ID with Unity Collaborate online (Dr. Alexander Herzog has ownership for access requests) at the first link, download and install the correct Unity version (Unity 2019.4.20f1), and download and install Unity Hub to link your Unity ID to in order to have access to the “Boeing VR Collaborative Project” from the cloud.
 
 Here is the Collaborative Organization link hosted within Unity ID: https://id.unity.com/en/organizations/clemson-capstone
 
