@@ -1,1 +1,3 @@
-This directory hosts the link to access the zip file containing our system's desktop application. Users and Developers may download/unzip this application at their leisure.
+Please consult Dr. Alexander Herzog for the Desktop version of the Boeing Collaborative VR Application.
+
+Email: aherzog@g.clemson.edu
