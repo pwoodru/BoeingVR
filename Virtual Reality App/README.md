@@ -1,5 +1,8 @@
-This directory exists to host information to access our Virtual Reality application and it's functional setup.
+Please consult Dr. Alexander Herzog for the Boeing Collaborative VR Application.
 
+Email: aherzog@g.clemson.edu
+
+This directory exists to host information to set up and access our Virtual Reality application from the cloud if desired.
 
 
 Set up the Unity ID with Unity Collaborate online at the following link, download and install the correct Unity version, and download and install Unity Hub to link your Unity ID to so you can access our "Boeing VR Collaborative Project".
